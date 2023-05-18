@@ -1,0 +1,47 @@
+﻿@model List<sistemaDeTickets.Models.SupportTicket>
+
+
+<h3 class="py-4 text-lg font-bold">Listado de tickets Cerrados</h3>
+<div class=" mx-auto relative overflow-x-auto shadow-md sm:rounded-lg">
+
+    <table class="table-fixed w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-50 uppercase bg-gray-700">
+            <tr class="text-center">
+                <th scope="col" class="px-6 py-3 w-1/12">Numero de Ticket</th>
+                <th scope="col" class="px-6 py-3 w-3/12">Tema</th>
+                <th scope="col" class="px-6 py-3 w-5/12">Descripcion</th>
+                <th scope="col" class="px-6 py-3 w-2/12">Fecha de Creacion</th>
+                <th scope="col" class="px-6 py-3 w-2/12">Fecha de Cierre</th>
+            </tr>
+        </thead>
+
+        <tbody class="text-xs text-gray-700 uppercase bg-gray-50">
+            @foreach (var ticket in Model)
+            {
+
+                <tr bg-white border-b>
+                    <td class="text-center px-6 py-4">
+                        @ticket.TicketNumber
+                    </td>
+                    <td class="px-6 py-4">
+                        @ticket.Subject
+                    </td>
+                    <td class="px-6 py-4">
+                        @ticket.Description
+                    </td>
+                    <td class="text-center px-6 py-4">
+                        @ticket.CreatedDate
+                    </td>
+                    <td class="text-center px-6 py-4">
+                        @ticket.ResolvedDate
+                    </td>
+                    
+                </tr>
+
+
+            }
+        </tbody>
+    </table>
+
+
+</div>

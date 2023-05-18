@@ -1,0 +1,26 @@
+﻿@model sistemaDeTickets.Models.SupportTicket
+
+<div class="mx-auto w-1/2 bg-slate-100 my-5 rounded-md">
+    <h3 class="p-4 text-lg font-bold bg-indigo-100 rounded-t-md">Generar nuevo Ticket</h3>
+    <div class="px-3 pb-3">
+        @using (Html.BeginForm("Guardar", "Ticket", FormMethod.Post))
+        {
+
+            <div class="p-3">
+                @Html.LabelFor(Model => Model.Subject, "Asunto",new { @class="block py-3 uppercase font-bold" }  )
+                @Html.TextBoxFor(Model => Model.Subject, new { @class="border-2 border-slate-600 w-full py-2 rounded-md" })
+            </div>
+            <div class="p-3">
+                @Html.LabelFor(Model => Model.Description, "Descripcion",new { @class="block py-3  uppercase font-bold" })
+                @Html.TextAreaFor(Model => Model.Description, new { @class="border-2 border-slate-600 w-full py-2 rounded-md" })
+            </div>
+            <div class="bg-red-600 text-white  ">
+                @Html.ValidationSummary()
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-green-400 hover:bg-green-500 rounded-md font-bold">Guardar</button>
+        }
+    </div>
+    
+    
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sistemaDeTickets", "sistemaDeTickets\sistemaDeTickets.csproj", "{DE8CAB70-25BB-4240-AFC8-9404C67D156A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE8CAB70-25BB-4240-AFC8-9404C67D156A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8CAB70-25BB-4240-AFC8-9404C67D156A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8CAB70-25BB-4240-AFC8-9404C67D156A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8CAB70-25BB-4240-AFC8-9404C67D156A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BF013F2-6F31-4DF7-968E-696098361F3B}
+	EndGlobalSection
+EndGlobal
